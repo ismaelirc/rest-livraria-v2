@@ -4,6 +4,7 @@ class AutorController {
 
   static listarAutores = async(req, res, next) => {
     try {
+      
       const autoresResultado = await autores.find();
 
       if(autoresResultado !== null){
